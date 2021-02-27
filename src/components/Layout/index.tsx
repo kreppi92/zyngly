@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { LABELS } from "../../constants";
 import { AppBar } from "../AppBar";
 
+import zyngly from "../zyngly.svg";
+
 const { Header, Content } = Layout;
 
 export const AppLayout = React.memo((props: any) => {
@@ -15,7 +17,7 @@ export const AppLayout = React.memo((props: any) => {
         <Header className="App-Bar">
           <Link to="/">
             <div className="app-title">
-              <h2>Solana DAPP</h2>
+              <img src={zyngly} alt="Zyngly" width={100} />
             </div>
           </Link>
           <AppBar />
